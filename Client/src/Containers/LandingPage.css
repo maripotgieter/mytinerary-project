@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  height: 91vh;
+  margin: 0;
+}
+#root {
+  height: 100%;
+}
+
+.Header {
+  text-align: center;
+  height: 100%;
+  font-family: 'Patrick Hand', cursive
+}
+
+/* .App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  } */
+
+.Logo-section {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+  .Button-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    justify-content: space-around;
+  }
+
+  .Button-section > img {
+    width: 30%;
+  }
+
+  .Button-section > div {
+    font-size: 40px;
+  }
+
+  .App-logo > img {
+    width: 100%;
+  }
+
+  .Logo-heading {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .Link-section {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .Link-subsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+  }
+  header > img {
+    width: 10%;
+  }
+
+  header > .top {
+    position: absolute;
+    left: 20px;
+  }
+  header > .top a.menu_icon i {
+    color: #000;
+    font-size: 40px;
+    padding-top: 5px;
+    transition: .2s ease;
+  }
+  header > .top a.menu_icon:hover i {
+    color: #fff;
+  }
+  nav.menu {
+    width: 300px;
+    min-height: calc(100vh - 121px);
+    background-color: #03a9f4;
+    position: absolute;
+    left: -300px;
+    transition: .3s all;
+  }
+  nav.menu > a {
+      display: block;
+      padding: 5px;
+      margin: 15px 0 0px 20px;
+      color: #494949;
+      text-transform: uppercase;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
