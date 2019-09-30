@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+body {
+    font-family: 'Patrick Hand', cursive;
+}
+.city {
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    margin: 5%;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.city > span {
+   position: absolute; 
+   bottom: 0;
+   right: 5%;
+   text-shadow: 0 0 2px #fff;
+}
+
+.inputFilter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    height: 10%;
+    color: white;   
+}
+
+.inputFilter > input {
+    padding: 6px;
+    border:1px solid #f3f0f0;
+    font-size: 17px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #f3f0f0;
+    box-shadow:2px 2px 5px #B5A3B3;
+  }

@@ -1,52 +1,16 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand|Sofia');
 
 body {
-  height: 91vh;
+  height: 100vh;
   margin: 0;
 }
 #root {
   height: 100%;
 }
 
-.Header {
+.header {
   text-align: center;
-  height: 100%;
-  font-family: 'Patrick Hand', cursive
-}
-
-/* .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  } */
-
-.Logo-section {
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
   .Button-section {
@@ -66,7 +30,11 @@ body {
   }
 
   .App-logo > img {
-    width: 100%;
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 100;
   }
 
   .Logo-heading {
@@ -93,9 +61,11 @@ body {
     width: 100%;
     height: 10%;
     justify-content: space-between;
+   
   }
   header > img {
     width: 10%;
+    height: 100%;
   }
 
   header > .top {
@@ -127,10 +97,139 @@ body {
       text-transform: uppercase;
   }
 
-  .show {
-    display: block;
-  }
+  /* .show {
+    width: 250px;
+  } */
 
   .hide {
-    display: none;
+    width: 0;
   }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .slider {
+    height: 100%;
+    width: 100%;
+    
+  }
+
+  .slides {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    /* -webkit-animation: fadeinout 20s linear infinite forwards;
+    animation: fadeinout 20s linear infinite forwards; */
+  }
+
+  @-webkit-keyframes fadeinout {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @keyframes fadeinout {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  .slide >  img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* //////Sidenav///// */
+  .sidenav {
+    height: 30%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-size: 36px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+
+  .signup-button, .login-button {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+.signup-button{
+  background-color: #3D90E3;
+}
+.login-button{
+  background-color: lightgray;
+  color: darkslategray;
+}
+
+  .button-footer{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .white-box{
+    background-color: white;
+    opacity: 0.7;
+    width: 70%;
+    height: 20%;
+    position: absolute;
+    margin: 15%;
+    top: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+
+
+ 
+  
+  
+ 
+
+   
+  
+    

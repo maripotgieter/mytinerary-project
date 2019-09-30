@@ -1,0 +1,221 @@
+.city_image {
+    width: 100%;
+    height: 35%;
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.itineraryBox {
+    display: flex; 
+}
+
+.borderBox {
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+.leftBox {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftBox > img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.rightBox {
+    width: 60%;
+}
+
+.detailBox , .hashtags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.dropdown {
+    width: 100%;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.show {
+    display: block;
+    
+  }
+
+.hide {
+    display: none;
+
+  }
+
+  .expand {
+    position: relative; 
+    top: 0; 
+    left: 0; 
+  }
+
+.viewAllButton {
+    width: 100%;
+}
+
+#footer {
+    width: 50%;
+    position: absolute;
+    bottom: 5px;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+    
+}
+
+.imageCarousel {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+.scene {
+    width: 100%;
+    height: 140px;
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  .carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: scroll;
+    overscroll-behavior-x: auto;
+  }
+  
+  .carousel__cell {
+    margin-left: 5px;
+    background-color: white;
+    border: 1px solid black;
+    width: 190px;
+    height: 120px;
+ 
+  }
+
+  /* /////////////////////////Comment Section///////////////////// */
+
+  .container {
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    padding: 25px;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+  
+  }
+  
+  .comments {
+    overflow: auto;
+    width: 75%;
+    max-width: 700px;
+    min-width: 300px;
+  }
+  
+  .comments h2 {
+    font-weight: 300;
+  }
+  
+  .singleComment {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  
+  .singleCommentContent {
+    min-width: 100px;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px;
+    display: inline-flex;
+  }
+  
+  .userImage {
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  
+  
+  .singleCommentContent h3 {
+    margin: 0;
+    padding-right: 5px;
+    font-size: 12px;
+    color: #385997;
+  }
+  
+  .singleCommentContent p {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .singleCommentButtons {
+    padding-top: 5px;
+  }
+  
+  .time {
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #999;
+  }
+  
+  .singleCommentButtons a {
+    margin: 0px 3px;;
+    padding-top: 10px;
+    cursor: pointer;
+    font-size: 10px;
+    color: #385997;
+    letter-spacing: 0.05em;
+  }
+  
+  .form {
+    width: 70%;
+    min-width: 300px;
+    max-width: 700px;
+  }
+  
+  .form form {
+    display: flex;
+    padding: 15px 0;
+  }
+  
+  .form input {
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid #c1c1c1;
+    margin-right: 10px;
+    border-radius: 20px;
+    flex: 3;
+  }
+  
+  .form input:first-child {
+    flex: 1;
+  }
+  
+  .form button {
+    color: #999;
+    border-radius: 5px;
+    border: 1px solid #999;
+  }
+  
+  .form button:hover {
+    cursor: pointer;
+    color: #385997;
+    border-color: #385997;
+  }
+
